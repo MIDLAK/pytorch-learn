@@ -2,3 +2,5 @@
 .python-version
 *.gz
 cifar-10-batches-py/
+luna16/
+cache/

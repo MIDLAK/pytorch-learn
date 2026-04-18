@@ -5,3 +5,5 @@ jupyter
 torch
 torchvision
 imageio
+SimpleITK
+diskcache
