@@ -55,10 +55,8 @@ class LunaModel(nn.Module):
         block_out = self.block3(block_out)
         block_out = self.block4(block_out)
 
-        conv_flat = block_out.view(
-            block_out.size(0),
-            -1,
-        )
+        # сглаживание 3D данных перед передачей в линейный слой
+        conv_flat = block_out.view(block_out.size(0), -1,)
         linear_output = self.head_linear(conv_flat)
 
         return linear_output, self.head_softmax(linear_output)
