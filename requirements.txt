@@ -8,3 +8,4 @@ imageio
 SimpleITK
 diskcache
 tensorflow
+tensorboard
